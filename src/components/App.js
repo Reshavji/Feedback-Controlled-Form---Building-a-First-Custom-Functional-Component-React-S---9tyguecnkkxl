@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import '../styles/App.css';
 
@@ -47,7 +46,9 @@ return (
          value={comment}
          onChange={handleCommentChange}
        />
+{commentError && (
 <p style={{ color: 'red' }} className="comment-error">{commentError}</p>
+)}
 </div>
 <button type='submit'>Submit</button>
 </form>
